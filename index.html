@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizont</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" type="module"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="menu">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close-outline"></ion-icon>
+    </div>
+
+    <div class="contenedor-principal">
+        <div class="barra-lateral">
+            <div>
+                <div class="nombre-pagina">
+                    <ion-icon id="cloud" name="bicycle-outline"></ion-icon>
+                    <span>Horizont</span>
+                </div>
+                <button class="boton" onclick="location.href='ruta.html'">
+                    <ion-icon name="add-outline"></ion-icon>
+                    <span>Nueva ruta</span>
+                </button>
+            </div>
+
+            <nav class="navegacion">
+                <ul>
+                    <li>
+                        <a href="#noticias" data-section="noticias" class="active">
+                            <ion-icon name="mail-unread-outline"></ion-icon>
+                            <span>Noticias</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#favoritos" data-section="favoritos">
+                            <ion-icon name="star-outline"></ion-icon>
+                            <span>Favoritos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#mensajes" data-section="mensajes">
+                            <ion-icon name="paper-plane-outline"></ion-icon>
+                            <span>Mensajes</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#informacion" data-section="informacion">
+                            <ion-icon name="document-text-outline"></ion-icon>
+                            <span>Información</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#importante" data-section="importante">
+                            <ion-icon name="bookmark-outline"></ion-icon>
+                            <span>Importante</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#spam" data-section="spam">
+                            <ion-icon name="alert-circle-outline"></ion-icon>
+                            <span>Spam</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#basura" data-section="basura">
+                            <ion-icon name="trash-outline"></ion-icon>
+                            <span>Basura</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div>
+                <div class="linea"></div>
+
+                <div class="modo-oscuro">
+                    <div class="info">
+                        <ion-icon name="moon-outline"></ion-icon>
+                        <span>Modo oscuro</span>
+                    </div>
+                    <div class="switch">
+                        <div class="base">
+                            <div class="circulo"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="usuario">
+                    <img src="perfil.jpg" alt="Foto de perfil">
+                    <div class="info-usuario">
+                        <div class="nombre-email">
+                            <span class="nombre">Jkc</span>
+                            <span class="email">jkc@example.com</span>
+                        </div>
+                        <div class="menu-usuario">
+                            <ion-icon name="ellipsis-vertical-outline" class="menu-icon"></ion-icon>
+                            <div class="menu-opciones">
+                                <a href="#" class="opcion-menu" data-action="login">
+                                    <ion-icon name="log-in-outline"></ion-icon>
+                                    <span>Login</span>
+                                </a>
+                                <a href="#" class="opcion-menu" data-action="cambiar-foto">
+                                    <ion-icon name="image-outline"></ion-icon>
+                                    <span>Cambiar foto de perfil</span>
+                                </a>
+                                <a href="#" class="opcion-menu" data-action="configuracion">
+                                    <ion-icon name="settings-outline"></ion-icon>
+                                    <span>Configuración</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main id="contenido-principal">
+            <section id="noticias" class="seccion-contenido active">
+                <h1>Noticias</h1>
+                <p>Aquí encontrarás las últimas noticias y actualizaciones.</p>
+                <ul>
+                    <li>Nueva ruta de ciclismo añadida en la montaña</li>
+                    <li>Evento de ciclismo comunitario este fin de semana</li>
+                    <li>Consejos para mantener tu bicicleta en óptimas condiciones</li>
+                </ul>
+            </section>
+        
+            <section id="favoritos" class="seccion-contenido">
+                <h1>Favoritos</h1>
+                <p>Tus rutas y contenidos favoritos se mostrarán aquí.</p>
+                <ul>
+                    <li>Ruta del Bosque Encantado</li>
+                    <li>Circuito de la Ciudad</li>
+                    <li>Desafío de Montaña</li>
+                </ul>
+            </section>
+        
+            <section id="mensajes" class="seccion-contenido">
+                <h1>Mensajes</h1>
+                <p>Centro de mensajes y notificaciones.</p>
+                <ul>
+                    <li>Nuevo mensaje de Juan: "¿Salimos a pedalear mañana?"</li>
+                    <li>Recordatorio: Mantenimiento programado para tu bicicleta</li>
+                    <li>Invitación a unirte al grupo "Ciclistas Urbanos"</li>
+                </ul>
+            </section>
+
+            <section id="informacion" class="seccion-contenido">
+                <h1>Información</h1>
+                <p>Información útil sobre ciclismo y nuestra plataforma.</p>
+                <ul>
+                    <li>Guía para principiantes en ciclismo</li>
+                    <li>Cómo usar todas las funciones de Horizont</li>
+                    <li>Preguntas frecuentes sobre seguridad en bicicleta</li>
+                </ul>
+            </section>
+
+            <section id="importante" class="seccion-contenido">
+                <h1>Importante</h1>
+                <p>Información y anuncios importantes.</p>
+                <ul>
+                    <li>Actualización de la política de privacidad</li>
+                    <li>Nuevas características añadidas a la aplicación</li>
+                    <li>Alerta de seguridad: Recuerda siempre usar casco</li>
+                </ul>
+            </section>
+
+            <section id="spam" class="seccion-contenido">
+                <h1>Spam</h1>
+                <p>Mensajes identificados como spam.</p>
+                <ul>
+                    <li>Oferta: "¡Gana una bicicleta gratis!"</li>
+                    <li>Publicidad no solicitada</li>
+                    <li>Mensaje sospechoso de un remitente desconocido</li>
+                </ul>
+            </section>
+
+            <section id="basura" class="seccion-contenido">
+                <h1>Basura</h1>
+                <p>Elementos eliminados.</p>
+                <ul>
+                    <li>Mensaje antiguo eliminado</li>
+                    <li>Ruta descartada: "Prueba de ruta"</li>
+                    <li>Notificación borrada de evento pasado</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="mind.js"></script>
+</body>
+</html>
